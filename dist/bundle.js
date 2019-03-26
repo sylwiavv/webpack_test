@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"pre {\\n  padding: 8px 16px;\\n  background: #2b3a42;\\n  color: #e1e6e9;\\n  font-family: Menlo, Courier, monospace;\\n  font-size: 13px;\\n  line-height: 1.5;\\n  text-shadow: 0 1px 0 rgba(23, 31, 35, 0.5);\\n  border-radius: 3px; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/style.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"pre {\\n  padding: 8px 16px;\\n  background: #2b3a42 url(\\\"/src/code.png\\\") no-repeat center center/32px;\\n  color: #e1e6e9;\\n  font-family: Menlo, Courier, monospace;\\n  font-size: 13px;\\n  line-height: 1.5;\\n  text-shadow: 0 1px 0 rgba(23, 31, 35, 0.5);\\n  border-radius: 3px; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/style.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 
@@ -7809,6 +7809,29 @@ eval("module.exports = function(originalModule) {\n\tif (!originalModule.webpack
 
 /***/ }),
 
+/***/ "./src/code.png":
+/*!**********************!*\
+  !*** ./src/code.png ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"037f8de8f5e98abaf1c418a997e9b805.png\";\n\n//# sourceURL=webpack:///./src/code.png?");
+
+/***/ }),
+
+/***/ "./src/image-example.js":
+/*!******************************!*\
+  !*** ./src/image-example.js ***!
+  \******************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _code_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./code.png */ \"./src/code.png\");\n/* harmony import */ var _code_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_code_png__WEBPACK_IMPORTED_MODULE_0__);\n\nvar img = document.createElement(\"img\");\nimg.src = _code_png__WEBPACK_IMPORTED_MODULE_0___default.a;\nimg.style = \"background: #2B3A42; padding: 20px\";\nimg.width = 32;\ndocument.body.appendChild(img);\n\n//# sourceURL=webpack:///./src/image-example.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -7817,7 +7840,7 @@ eval("module.exports = function(originalModule) {\n\tif (!originalModule.webpack
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash-es */ \"./node_modules/lodash-es/lodash.js\");\n/* harmony import */ var _people__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./people */ \"./src/people.js\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_2__);\n//const root = document.createElement(\"div\")\n//root.innerHTML = `<p>Hello Webpack.</p>`\n//document.body.appendChild(root)\n\n\n\nvar managerGroups = Object(lodash_es__WEBPACK_IMPORTED_MODULE_0__[\"groupBy\"])(_people__WEBPACK_IMPORTED_MODULE_1__[\"default\"], \"manager\");\nvar root = document.createElement(\"div\");\nroot.innerHTML = \"<pre>\".concat(JSON.stringify(managerGroups, null, 2), \"</pre>\");\ndocument.body.appendChild(root);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash-es */ \"./node_modules/lodash-es/lodash.js\");\n/* harmony import */ var _people__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./people */ \"./src/people.js\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _image_example__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./image-example */ \"./src/image-example.js\");\n//const root = document.createElement(\"div\")\n//root.innerHTML = `<p>Hello Webpack.</p>`\n//document.body.appendChild(root)\n\n\n\n\nvar managerGroups = Object(lodash_es__WEBPACK_IMPORTED_MODULE_0__[\"groupBy\"])(_people__WEBPACK_IMPORTED_MODULE_1__[\"default\"], \"manager\");\nvar root = document.createElement(\"div\");\nroot.innerHTML = \"<pre>\".concat(JSON.stringify(managerGroups, null, 2), \"</pre>\");\ndocument.body.appendChild(root);\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

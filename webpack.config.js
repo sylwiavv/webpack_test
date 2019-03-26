@@ -7,7 +7,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     devServer: {
-        //hot: true,
+        hot: true,
         publicPath: '/dist/'
     },
     module: {
@@ -28,7 +28,17 @@ module.exports = {
                 }, {
                     loader: 'sass-loader'
                 }]
+
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    {
+                        loader: 'file-loader'
+                    }
+                ]
             }
         ]
     }
 };
+
