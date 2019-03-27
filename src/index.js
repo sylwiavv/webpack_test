@@ -13,3 +13,4 @@ const root = document.createElement("div")
 root.innerHTML = `<pre>${JSON.stringify(managerGroups, null, 2)}</pre>`
 document.body.appendChild(root)
 
+ [1,2,3,4].map(el => el * 2);
